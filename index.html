@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-image: url(./11582450_21034572.jpg);
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+        /* bg-gradient-to-r from-cyan-100 to-blue-200 */
+      }
+      #video-player {
+        transform: scaleY(0.95);
+        transform-origin: top;
+      }
+    </style>
+  </head>
+  <body>
+    <video
+      id="video-player"
+      width="45.5%"
+      controls
+      src="dummy.mp4"
+      class="mt-[5.5%] bg-black m-auto"
+    ></video>
+    <h1 class="text-3xl mt-4 font-bold text-center text-black">
+      Screen Recorder
+    </h1>
+    <div
+      id="video-recorder"
+      class="flex align-center justify-center gap-10 mt-9"
+    >
+      <button
+        class="px-6 py-2 font-semibold bg-red-500 text-white rounded-full shadow-sm hover:shadow-lg hover:scale-[1.1]"
+        id="start"
+      >
+        Start Recording
+      </button>
+      <button
+        class="px-6 py-2 font-semibold bg-green-500 text-white rounded-full shadow-sm hover:shadow-lg hover:scale-[1.1]"
+        id="stop"
+      >
+        Stop Recording
+      </button>
+      <button
+        id="playnPausebtn"
+        class="px-6 py-2 font-semibold bg-green-500 text-white rounded-full shadow-sm hover:shadow-lg hover:scale-[1.1]"
+      >
+        Play
+      </button>
+      <button
+        id="downloadbtn"
+        class="px-6 py-2 font-semibold bg-green-500 text-white rounded-full shadow-sm hover:shadow-lg hover:scale-[1.1]"
+      >
+        Download
+      </button>
+      <button
+        class="px-6 py-2 font-semibold bg-green-500 text-white rounded-full shadow-sm hover:shadow-lg hover:scale-[1.1]"
+      >
+        New
+      </button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
